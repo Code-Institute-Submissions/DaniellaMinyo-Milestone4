@@ -17,11 +17,11 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">All Equipment</a>
-                <a href="" class="dropdown-item">Tents</a>
-                <a href="" class="dropdown-item">Sleeping Bags</a>
-                <a href="" class="dropdown-item">Backpacks</a>
-                <a href="" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=tents,sleeping_bags,backpacks,other" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=tents" class="dropdown-item">Tents</a>
+                <a href="{% url 'products' %}?category=sleeping_bags" class="dropdown-item">Sleeping Bags</a>
+                <a href="{% url 'products' %}?category=backpacks" class="dropdown-item">Backpacks</a>
+                <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
             </div>
         </li>
 
@@ -30,9 +30,9 @@
                 Clothing &amp; Shoes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">All Clothing &amp;Shoes</a>
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Shoes</a>
+                <a href="{% url 'products' %}?category=clothing,shoes" class="dropdown-item">All Clothing &amp;Shoes</a>
+                <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
+                <a href="{% url 'products' %}?category=shoes" class="dropdown-item">Shoes</a>
             </div>
         </li>
     </ul>
