@@ -5,10 +5,6 @@
 <!-- Start Header Image Section-->
 <div>
       <div><img class="img-fluid w-100" src="{% static 'home-image.jpg' %}" alt="camping"></div>
-      <div class="text-caption">
-            <h2 class="animate__animated animate__fadeInRight animate__delay-0.5s">Get subscribed</h2>
-            <p class="animate__animated animate__fadeInRight animate__delay-1s">Don’t miss any updates</p>
-      </div>
 </div>
 <!--End Header Image Section -->
 <section class="subscribe-section">
@@ -18,7 +14,7 @@
                 <div>
                     <h2 class="mb-2 text-center">Adventure Awaits</h2>
                     <div class="border-top border-danger w-25 mx-auto mt-md-5 mb-md-5"></div>
-                    <p class="text-center">Subscribe to be notified of new deals and offers as they happen.</p>
+                    <p class="text-center logo-font my-1 text-black">Subscribe to be notified of new deals and offers as they happen.</p>
                 </div>
             </div>
         </div>
@@ -28,7 +24,9 @@
                     <div class="text-center">
                         {% csrf_token %}
                         {{ form|crispy }}
-                        <button type="submit" class="btn subscribe-btn">Submit</button>
+                        <button type="submit" class="btn btn-black rounded-0">
+                            <span class="font-weight-bold">Submit</span>
+                        </button>
                     </div>
                 </form>
             </div>

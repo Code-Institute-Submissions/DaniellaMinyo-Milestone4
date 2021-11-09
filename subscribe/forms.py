@@ -23,7 +23,6 @@ class SubscribeForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
 
-
     class Meta:
         """Add model and fields"""
         model = Subscribe

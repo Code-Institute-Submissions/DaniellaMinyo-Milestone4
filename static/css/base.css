@@ -106,6 +106,13 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* Subscription page and link */
+
+.subscription a {
+    text-decoration: none;
+    color: white; 
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
