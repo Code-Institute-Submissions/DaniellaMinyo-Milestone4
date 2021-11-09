@@ -8,4 +8,4 @@ class SubscribeAdmin(admin.ModelAdmin):
     list_display = ('email', 'full_name',)
 
 
-admin.site.register(Subscribe)
+admin.site.register(Subscribe, SubscribeAdmin)
