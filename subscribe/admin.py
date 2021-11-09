@@ -5,7 +5,7 @@ from .models import Subscribe
 
 
 class SubscribeAdmin(admin.ModelAdmin):
-    list_display = ('email', 'full_name',)
+    list_display = ('full_name', 'email')
 
 
 admin.site.register(Subscribe, SubscribeAdmin)

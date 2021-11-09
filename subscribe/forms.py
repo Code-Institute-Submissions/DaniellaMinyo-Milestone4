@@ -4,12 +4,27 @@ from .models import Subscribe
 
 class SubscribeForm(forms.ModelForm):
     """Add custom default value to email field """
-    email = forms.EmailField(
-        label='', widget=forms.EmailInput(
-            attrs={'placeholder': 'Your email', 'class': 'form-control'}))
-    self.fields['full_name'].widget.attrs['autofocus'] = True
+
+    def __init__(self, *args, **kwargs):
+        """
+        Add placeholders and classes, remove auto-generated
+        labels and set autofocus on first field
+        """
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'full_name': 'Full Name',
+            'email': 'Email Address',
+        }
+
+        self.fields['full_name'].widget.attrs['autofocus'] = True
+        for field in self.fields:
+            placeholder = placeholders[field]
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+            self.fields[field].label = False
+
 
     class Meta:
         """Add model and fields"""
         model = Subscribe
-        fields = ('email', 'full_name')
+        fields = ('full_name', 'email')
