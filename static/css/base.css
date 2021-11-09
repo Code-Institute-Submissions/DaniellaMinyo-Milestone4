@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: white !important;
 }
 
 .main-logo-link {
@@ -111,6 +112,16 @@ input[name='q']::placeholder {
 .subscription a {
     text-decoration: none;
     color: white; 
+}
+
+.subscription-text {
+    text-decoration: underline;
+    color: black;
+}
+
+.subscription-text-row {
+    padding: 20px;
+    margin: 10px;
 }
 
 /* ------------------------------- bootstrap toasts */
