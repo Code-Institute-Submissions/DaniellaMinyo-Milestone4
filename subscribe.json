@@ -1,0 +1,1 @@
+ [{"model": "subscribe.subscribe", "pk": 1, "fields": {"full_name": "test", "email": "gaborminyo@gmail.com"}}, {"model": "subscribe.subscribe", "pk": 2, "fields": {"full_name": "dsdsf", "email": "minyodancsi@freemail.hu"}}]
