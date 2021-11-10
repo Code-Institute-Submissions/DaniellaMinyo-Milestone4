@@ -1,3 +1,4 @@
+""" Add forms """
 from django import forms
 from .models import Subscribe
 
@@ -17,11 +18,6 @@ class SubscribeForm(forms.ModelForm):
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
-        for field in self.fields:
-            placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            self.fields[field].label = False
 
     class Meta:
         """Add model and fields"""
