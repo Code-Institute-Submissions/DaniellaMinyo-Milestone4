@@ -124,6 +124,13 @@ input[name='q']::placeholder {
     margin-top: 10px;
 }
 
+.subscribe-section {
+    margin-top: 250px;
+}
+
+.subscribe-section .container{
+    background-color: antiquewhite;
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -343,5 +350,9 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .subscribe-section{
+        max-width: 150px;
     }
 }

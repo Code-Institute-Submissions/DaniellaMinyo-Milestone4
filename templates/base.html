@@ -146,7 +146,14 @@
 
     {% block content %}
     {% endblock %}
-
+    <div class="container-fluid">
+      <div class="row subscribe text-center bg-black pb-2">
+        <div class="col text-center bg-black text-white">
+              <h5 class="subscription logo-font my-2"><a href="{% url 'add_subscription' %}">Subscribe to be notified of discounts.</a></h5>
+        </div>
+      </div>
+    </div>
+    
     {% block postloadjs %}
       <script type="text/javascript">
         $('.toast').toast('show');
