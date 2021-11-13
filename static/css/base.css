@@ -10,6 +10,10 @@ body {
     font-family: 'Lato';
 }
 
+main {
+    min-height: calc(100vh - 150px);
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -130,6 +134,15 @@ input[name='q']::placeholder {
 
 .subscribe-section .container{
     background-color: antiquewhite;
+}
+
+.product-image {
+    padding-top: 50px;
+}
+
+.product-text {
+    background-color: antiquewhite;
+    margin: 20px 0px;
 }
 /* ------------------------------- bootstrap toasts */
 
@@ -305,6 +318,7 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
+
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
