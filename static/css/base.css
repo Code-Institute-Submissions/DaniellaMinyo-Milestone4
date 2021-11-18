@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 150px);
+    min-height: 100vh;
     position: relative;
     margin: auto;
 
@@ -30,6 +30,10 @@ main {
     color: #da952f !important;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
+}
+
+.contact-container, .subscribe-container {
+    padding-bottom: 15px;
 }
 
 /* from Bulma */
@@ -137,8 +141,9 @@ input[name='q']::placeholder {
 }
 
 .subscription-text {
-    text-decoration: underline;
+    text-decoration: solid;
     color: black;
+    padding-top: 15px;
 }
 
 .subscription-text-row {
@@ -147,7 +152,7 @@ input[name='q']::placeholder {
 }
 
 .subscribe-section {
-    margin-top: 250px;
+    margin-top: 30vh;
 }
 
 .subscribe-section .container{
@@ -167,9 +172,9 @@ input[name='q']::placeholder {
     padding-bottom: 0rem !important;
 }
 
-.card-container {
+/* .card-container {
     background-color: antiquewhite;
-}
+} */
 
 .card-container {
     padding: 15px;
@@ -178,6 +183,25 @@ input[name='q']::placeholder {
 .add-product-container {
     background-color: antiquewhite;
 }
+
+.form-styling {
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.to-top-button {
+    background-color: white;
+    z-index: 1000;
+}
+
+.forms {
+    padding-bottom: 50px
+}
+
+.submit-btns {
+    margin-top: 20px
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -415,6 +439,16 @@ input[name='q']::placeholder {
     }
 
     .subscribe-section{
-        max-width: 150px;
+        max-width: 1000px;
+    }
+}
+
+/* style on small phone sizes */
+@media (max-width: 340px) {
+    .container-home{
+        padding-top: 130px;
+    }
+    .product-container {
+        padding-top: 50px;
     }
 }
