@@ -5,6 +5,7 @@ from .models import Subscribe
 
 
 class SubscribeAdmin(admin.ModelAdmin):
+    fields = ('full_name', 'email')
     list_display = ('full_name', 'email')
 
 
