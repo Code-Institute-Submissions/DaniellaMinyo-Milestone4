@@ -172,10 +172,6 @@ input[name='q']::placeholder {
     padding-bottom: 0rem !important;
 }
 
-/* .card-container {
-    background-color: antiquewhite;
-} */
-
 .card-container {
     padding: 15px;
 }
@@ -200,6 +196,14 @@ input[name='q']::placeholder {
 
 .submit-btns {
     margin-top: 20px
+}
+
+.container.header-container.login-logout {
+    padding-top: 40vh;
+}
+
+.login-logout-signup-button {
+    margin-left: 15px;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -377,19 +381,11 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
-
-    .header-container {
-        padding-top: 164px;
-    }
 }
 
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
     body {
         height: calc(100vh - 116px);
     }
@@ -447,6 +443,7 @@ input[name='q']::placeholder {
 @media (max-width: 340px) {
     .container-home{
         padding-top: 130px;
+        margin-top: 35px;
     }
     .product-container {
         padding-top: 50px;
