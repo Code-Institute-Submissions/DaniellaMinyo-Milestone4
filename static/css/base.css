@@ -206,6 +206,28 @@ input[name='q']::placeholder {
     margin-left: 15px;
 }
 
+.profile-container {
+    padding-top: 200px;
+}
+
+.shopping-bag-container {
+    padding-top: 200px;
+}
+
+.items {
+    padding-top: 10px;
+}
+
+.center-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.secure-shop-buttons {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -439,6 +461,15 @@ input[name='q']::placeholder {
     }
 }
 
+@media (max-width: 992px) {
+    .shopping-bag-container {
+        padding-top: 100px;
+    }
+    .profile-container {
+        padding-top: 150px;
+    }
+}
+
 /* style on small phone sizes */
 @media (max-width: 340px) {
     .container-home{
@@ -447,5 +478,17 @@ input[name='q']::placeholder {
     }
     .product-container {
         padding-top: 50px;
+    }
+    .shopping-bag-container {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 417px) {
+    .shopping-bag-container {
+        padding-top: 200px;
+    }
+    .profile-container {
+        padding-top: 200px;
     }
 }
