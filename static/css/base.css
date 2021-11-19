@@ -178,6 +178,7 @@ input[name='q']::placeholder {
 
 .add-product-container {
     background-color: antiquewhite;
+    padding-top: 200px;
 }
 
 .form-styling {
@@ -223,9 +224,8 @@ input[name='q']::placeholder {
     text-align: center;
 }
 
-.secure-shop-buttons {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.padding-buttons {
+    padding: 15px 0px;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -468,6 +468,10 @@ input[name='q']::placeholder {
     .profile-container {
         padding-top: 150px;
     }
+    .add-product-container {
+        background-color: antiquewhite;
+        padding-top: 100px;
+    }
 }
 
 /* style on small phone sizes */
@@ -489,6 +493,10 @@ input[name='q']::placeholder {
         padding-top: 200px;
     }
     .profile-container {
+        padding-top: 200px;
+    }
+    .add-product-container {
+        background-color: antiquewhite;
         padding-top: 200px;
     }
 }
