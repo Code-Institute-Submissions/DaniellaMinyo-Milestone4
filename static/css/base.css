@@ -24,6 +24,7 @@ main {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    padding-top: 100px;
 }
 
 .home-text {
@@ -181,6 +182,15 @@ input[name='q']::placeholder {
     padding-top: 200px;
 }
 
+.edit-product-container {
+    background-color: antiquewhite;
+    padding-top: 200px;
+}
+
+.products-container, .checkout-success-container,  .checkout-container, .shopping-bag-container {
+    padding-top: 200px;
+}
+
 .form-styling {
     justify-content: center;
     background-color: antiquewhite;
@@ -211,10 +221,6 @@ input[name='q']::placeholder {
     padding-top: 200px;
 }
 
-.shopping-bag-container {
-    padding-top: 200px;
-}
-
 .items {
     padding-top: 10px;
 }
@@ -226,6 +232,12 @@ input[name='q']::placeholder {
 
 .padding-buttons {
     padding: 15px 0px;
+}
+
+.checkout-total {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: larger;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -469,8 +481,37 @@ input[name='q']::placeholder {
         padding-top: 150px;
     }
     .add-product-container {
-        background-color: antiquewhite;
         padding-top: 100px;
+    }
+    .edit-product-container {
+        padding-top: 100px;
+    }
+    .products-container {
+        padding-top: 120px;
+    }
+    .checkout-container, .checkout-success-container {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 417px) {
+    .shopping-bag-container {
+        padding-top: 200px;
+    }
+    .profile-container {
+        padding-top: 200px;
+    }
+    .add-product-container {
+        padding-top: 200px;
+    }
+    .edit-product-container {
+        padding-top: 150px;
+    }
+    .products-container {
+        padding-top: 200px;
+    }
+    .checkout-container, .checkout-success-container {
+        padding-top: 200px;
     }
 }
 
@@ -486,17 +527,13 @@ input[name='q']::placeholder {
     .shopping-bag-container {
         padding-top: 100px;
     }
-}
-
-@media (max-width: 417px) {
-    .shopping-bag-container {
-        padding-top: 200px;
+    .edit-product-container {
+        padding-top: 250px;
     }
-    .profile-container {
-        padding-top: 200px;
+    .products-container {
+        padding-top: 250px;
     }
-    .add-product-container {
-        background-color: antiquewhite;
-        padding-top: 200px;
+    .checkout-container, .checkout-success-container {
+        padding-top: 250px;
     }
 }
