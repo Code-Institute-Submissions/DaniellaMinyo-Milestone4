@@ -18,8 +18,6 @@
   - [Responsiveness](#responsiveness)
   - [Browser compatibility](#browser-compatibility)
   - [Performance Testing](#performance-testing)
-
-
   - [User Stories](#user-stories)
 
 

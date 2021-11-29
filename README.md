@@ -38,7 +38,7 @@ To test the functionality of the payment section of this project use the card nu
 
 <a name="ux"></a>
 
-## User Experience (UX)
+## User Experience
 
 <a name="wireframe"></a>
 
@@ -168,6 +168,10 @@ Checkout (and purchasing)
 - A button that redirects the user to the all products page.
 
 
+### Features to implement in the future
+
+- Send subscription emails to users and confirmation emails, as the subscribe and contact form currently only saves the information entered by the user to the database.
+
 <a name="technologies"></a>
 
 ## Technologies Used
@@ -195,6 +199,7 @@ Checkout (and purchasing)
 <a name="testing"></a>
 
 ## Testing
+
 [find here](https://github.com/DaniellaMinyo/Milestone4/blob/main/TESTING.md)
 
 
@@ -360,7 +365,7 @@ For this project to be successfuly deployed on heroku you need to use a service 
 <a name="known-bugs"></a>
 
 ## Known Bugs
-
+- In the navbar, the home button doesn't show up on tablet/medium sizes.
 
 <a name="credits"></a> 
 
@@ -368,7 +373,7 @@ For this project to be successfuly deployed on heroku you need to use a service 
 
 ### Code
 
-- This project was very heavily influenced by the [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) mini-project from the code institute course.
+- This project was very heavily influenced by the [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) mini-project from the code institute course and a lot of the code is from there with  customization and modifications for this project.
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used for the responsive design.
 
 ### Content
