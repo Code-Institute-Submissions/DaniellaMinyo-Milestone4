@@ -13,7 +13,7 @@
     <div class="container container-home">
         <div class="row justify-content-center">
             <div class="col-6 col-md-12 my-auto">
-                <h1 class="home-text">
+                <h1 class="home-text fade-effect" id="home-text" onload="fade()">
                     Shop for a quiet getaway!
                 </h1>
             </div>
@@ -24,4 +24,13 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+  <script>
+    $(document).ready(function fade(){
+        document.getElementById("home-text").className = "fading-in";
+    });
+  </script>
 {% endblock %}

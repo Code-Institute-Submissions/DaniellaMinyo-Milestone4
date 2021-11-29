@@ -28,9 +28,21 @@ main {
 }
 
 .home-text {
+    color: #da952f;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+}
+
+.fade-effect {
+    opacity: 0;
+}
+
+.fading-in {
     color: #da952f !important;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
+    transition: 4s !important;
+    opacity: 1 !important;
 }
 
 .contact-container, .subscribe-container {
